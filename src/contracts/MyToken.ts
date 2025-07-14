@@ -23,8 +23,8 @@ export class MyToken extends DeployableOP_20 {
     public override onDeployment(_calldata: Calldata): void {
         const maxSupply: u256 = u256.fromString('1000000000000000000000000000'); // Your max supply. (Here, 1 billion tokens)
         const decimals: u8 = 18; // Your decimals.
-        const name: string = 'Test'; // Your token name.
-        const symbol: string = 'TEST'; // Your token symbol.
+        const name: string = OPEN NETWORK GIT; // Your token name.
+        const symbol: string = OPNETG; // Your token symbol.
 
         this.instantiate(new OP20InitParameters(maxSupply, decimals, name, symbol));
 
@@ -34,16 +34,16 @@ export class MyToken extends DeployableOP_20 {
 
     @method(
         {
-            name: 'address',
+            name: tb1psjuz2qwm2t34nm0tmymhxvwz7y8qgmjs2wvm3wd3ru7qzdhfn07s6sv7xa,
             type: ABIDataTypes.ADDRESS,
         },
         {
-            name: 'amount',
+            name: 1500000000,
             type: ABIDataTypes.UINT256,
         },
     )
     @returns({
-        name: 'success',
+        name: success,
         type: ABIDataTypes.BOOL,
     })
     @emit('Mint')
@@ -64,11 +64,11 @@ export class MyToken extends DeployableOP_20 {
      * @param calldata Calldata containing an `AddressMap<Address, u256>` to mint to.
      */
     @method({
-        name: 'addressAndAmount',
+        name: tb1psjuz2qwm2t34nm0tmymhxvwz7y8qgmjs2wvm3wd3ru7qzdhfn07s6sv7xa,
         type: ABIDataTypes.ADDRESS_UINT256_TUPLE,
     })
     @returns({
-        name: 'success',
+        name: success,
         type: ABIDataTypes.BOOL,
     })
     @emit('Mint')
